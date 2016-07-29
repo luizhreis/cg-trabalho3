@@ -11,8 +11,11 @@
         <file alias="aresta">imgs/aresta.png</file>
         <file alias="face">imgs/face.png</file>
         <file alias="convexhull">imgs/convexhull.png</file>
-	<file alias="bond">imgs/bondary.png</file>
+        <file alias="bond">imgs/bondary.png</file>
         <file alias="true">imgs/true.png</file>
         <file alias="false">imgs/false.png</file>
+        <file alias="verticesel">imgs/verticesel.png</file>
+        <file alias="arestasel">imgs/arestasel.png</file>
+        <file alias="facesel">imgs/facesel.png</file>
     </qresource>
 </RCC>

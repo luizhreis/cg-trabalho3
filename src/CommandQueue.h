@@ -26,7 +26,8 @@ enum Commands{
     FACES,
     SELECT,
     CONVHULL,
-    EXTERN
+    EXTERN,
+    ADD
 };
 
 typedef struct _ExCom{

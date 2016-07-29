@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QtWidgets>
+#include <QMenu>
 #include <RenderPanel.h>
 
 namespace Ui {
@@ -18,6 +19,7 @@ public slots:
     void bondaryClick(bool value);
 
 public:
+    QMenu *mnuZoon;
     MainWindow(QWidget* parent = 0);
 
     void bondaryFeedBack(bool value);
@@ -28,6 +30,8 @@ private:
    RenderPanel* centralpanel;
 
     Ui::MainWindow *ui;
+
+    void criarMenu();
 };
 
 

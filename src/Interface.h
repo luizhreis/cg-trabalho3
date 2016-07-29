@@ -19,33 +19,33 @@ class Interface : public QObject
 public:
     Interface();
 
-HalfEdge* findTwin(QPointF u,QPointF v);
-void addFace(QVector<QPointF> in);
-void addExtEdges(void);
-double getMaxX(void){ return maxX; }
-double getMaxY(void){ return maxY; }
-double getMinX(void){ return minX; }
-double getMinY(void){ return minY; }
-QList<QPair<QPointF, QPointF> > getTodasArestas();
-HalfEdge* getArestaNear(QPointF p);
-Face* getFaceNear(QPointF p);
-Vertex* getVerticeNear(QPointF p);
-bool isExterna(Face* f);
-QVector<HalfEdge* > componentesFaceExterna;
-void clear(void);
+    HalfEdge* findTwin(QPointF u,QPointF v);
+    void addFace(QVector<QPointF> in);
+    void addExtEdges(void);
+    double getMaxX(void){ return maxX; }
+    double getMaxY(void){ return maxY; }
+    double getMinX(void){ return minX; }
+    double getMinY(void){ return minY; }
+    QList<QPair<QPointF, QPointF> > getTodasArestas();
+    HalfEdge* getArestaNear(QPointF p);
+    Face* getFaceNear(QPointF p);
+    Vertex* getVerticeNear(QPointF p);
+    bool isExterna(Face* f);
+    QVector<HalfEdge* > componentesFaceExterna;
+    void clear(void);
 
-QMap<QPair<QPointF,QPointF>, HalfEdge *>& getMap();
-QVector<Face*>& getFaces();
+    QMap<QPair<QPointF,QPointF>, HalfEdge *>& getMap();
+    QVector<Face*>& getFaces();
 
 
-void removeFaceFromCollection(Face*);
-void removeEdgeFromCollection(HalfEdge*);
+    void removeFaceFromCollection(Face*);
+    void removeEdgeFromCollection(HalfEdge*);
 
-void convexHull();
+    void convexHull();
 
-bool isBoundary(Vertex *);
-bool isBoundary(HalfEdge *);
-bool isBoundary(Face *);
+    bool isBoundary(Vertex *);
+    bool isBoundary(HalfEdge *);
+    bool isBoundary(Face *);
 
 
 private:

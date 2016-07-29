@@ -30,14 +30,14 @@ Render::Render(int w, int h, CommandQueue *c) {
 
     arestaScreen.setColor(QColor(0,0,0,255));
     selecionadoScreen.setColor(QColor(0,128,128,128));
-    selecionadoScreen.setColor(QColor(255,0,0,128));
-    selecionadoScreen.setWidth(10);
-    vizinhoScreen.setColor(QColor(0,255,0,128));
-    vizinhoScreen.setWidth(10);
+    selecionadoScreen.setColor(QColor(0,255,0,128));
+    selecionadoScreen.setWidth(7);
+    vizinhoScreen.setColor(QColor(0,0,255,128));
+    vizinhoScreen.setWidth(7);
     faceExternaBack.setColor(corFaceExt);
     arestaGrossaBack.setColor(corArestaGrossa);
     verticeGrossoBack.setColor(corVerticeGrosso);
-    arestaGrossaBack.setWidth(10);
+    arestaGrossaBack.setWidth(7);
     verticeGrossoBack.setWidth(10);
 
     mostraAresta = false;

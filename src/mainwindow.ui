@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Vizualizador de malha com Half-Edge</string>
+   <string>Trabalho 3 - Half-Edge</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QMenuBar" name="menubar">
@@ -20,17 +20,20 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="windowTitle">
     <string>toolBar</string>
    </property>
    <attribute name="toolBarArea">
-    <enum>LeftToolBarArea</enum>
+    <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
     <bool>false</bool>
@@ -52,12 +55,8 @@
    <addaction name="actionBondary"/>
   </widget>
   <action name="actionOpen_File">
-   <property name="icon">
-    <iconset resource="../trab2FT.qrc">
-     <normaloff>:/open</normaloff>:/open</iconset>
-   </property>
    <property name="text">
-    <string>Open File</string>
+    <string>Abrir</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+F</string>
@@ -65,7 +64,7 @@
   </action>
   <action name="actionZoom_In">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/zoom-in</normaloff>:/zoom-in</iconset>
    </property>
    <property name="text">
@@ -77,7 +76,7 @@
   </action>
   <action name="actionZoom_Out">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/zoom-out</normaloff>:/zoom-out</iconset>
    </property>
    <property name="text">
@@ -89,7 +88,7 @@
   </action>
   <action name="actionUp">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/arrow-up</normaloff>:/arrow-up</iconset>
    </property>
    <property name="text">
@@ -101,7 +100,7 @@
   </action>
   <action name="actionLeft">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/arrow-left</normaloff>:/arrow-left</iconset>
    </property>
    <property name="text">
@@ -113,7 +112,7 @@
   </action>
   <action name="actionRight">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/arrow-rigth</normaloff>:/arrow-rigth</iconset>
    </property>
    <property name="text">
@@ -125,7 +124,7 @@
   </action>
   <action name="actionDown">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/arrow-down</normaloff>:/arrow-down</iconset>
    </property>
    <property name="text">
@@ -136,35 +135,53 @@
    </property>
   </action>
   <action name="actionVertice">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/vertice</normaloff>:/vertice</iconset>
    </property>
-   <property name="text">
+   <property name="toolTip">
     <string>Vertice</string>
    </property>
   </action>
   <action name="actionAresta">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/aresta</normaloff>:/aresta</iconset>
    </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
     <string>Aresta</string>
    </property>
   </action>
   <action name="actionFace">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/face</normaloff>:/face</iconset>
    </property>
    <property name="text">
+    <string> </string>
+   </property>
+   <property name="iconText">
+    <string>Fronteira</string>
+   </property>
+   <property name="toolTip">
     <string>Face</string>
    </property>
   </action>
   <action name="actionConvex_Hull">
    <property name="icon">
-    <iconset resource="../trab2FT.qrc">
+    <iconset resource="../trabalho3.qrc">
      <normaloff>:/convexhull</normaloff>:/convexhull</iconset>
    </property>
    <property name="text">
@@ -178,18 +195,24 @@
    <property name="checkable">
     <bool>true</bool>
    </property>
-   <property name="icon">
-    <iconset>
-     <normalon>:/bond</normalon>
-    </iconset>
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionAddVertice">
+   <property name="checkable">
+    <bool>true</bool>
    </property>
    <property name="text">
-    <string>bondary</string>
+    <string>add vertice</string>
+   </property>
+   <property name="toolTip">
+    <string>Adicionar Vertice</string>
    </property>
   </action>
  </widget>
  <resources>
-  <include location="../trab2FT.qrc"/>
+  <include location="../trabalho3.qrc"/>
  </resources>
  <connections/>
 </ui>
